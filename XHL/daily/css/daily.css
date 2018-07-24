@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	user-select: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.daily {
+	width: 590px;
+	height: 460px;
+	margin: 0 auto;
+	border: solid 1px #242330;
+}
+
+.header {
+	height: 40px;
+	background-color: #242330;
+	color: #fff;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header h1 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.icon-win-daily {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -180px -280px;
+	margin-right: 6px;
+	vertical-align: text-bottom;
+}
+
+.win-controls button {
+	width: 25px;
+    height: 25px;
+    border: none;
+    background-image: url(../img/sprite.png);
+    background-color: transparent;
+    transition: background-color, opacity .2s;
+}
+
+.btn-minimize {
+    background-position: 0px 0px;
+}
+
+.btn-close {
+	background-position: 0px -75px;
+	margin-left: 25px;
+}
+
+.main {
+	height: 418px;
+	display: flex;
+}
+
+.main-left {
+	width: 210px;
+	background-color: #fff;
+	border-right: solid 1px #ececec;
+}
+
+.basic {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.basic li {
+	flex-grow: 1;
+	padding: 30px 0 0 80px;
+	position: relative;
+}
+
+.basic li::after {
+	content: '';
+	height: 1px;
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 0px;
+	background: #f6f6f6;
+}
+
+.basic li i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: -25px;
+	vertical-align: bottom;
+	background-image: url(../img/daily.png);
+}
+
+.icon-live-duraition {
+	background-position: 0 0;
+}
+
+.icon-gift-value {
+	background-position: 0 -20px;
+}
+
+.icon-popularity {
+	background-position: 0 -40px;
+}
+
+.icon-danmu-amount {
+	background-position: 0 -60px;
+}
+
+.basic li p {
+	display: inline-block;
+	color: #666;
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+.basic li em {
+	display: block;
+	color: #fb910c;
+	font-style: normal;
+	margin-left: 5px;
+}
+
+.main-right {
+	flex: 1;
+	padding: 30px;
+}
+
+.main-right p {
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+
+.icon-gift-rank {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/daily.png);
+	background-position: -20px 0;
+	vertical-align: middle;
+}
+
+.main-right ul {
+	counter-reset: gift-num;
+}
+
+.main-right li {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 10px;
+}
+
+.main-right li::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	counter-increment: gift-num;
+	content: counter(gift-num);
+	border-radius: 12px;
+	text-align: center;
+	line-height: 24px;
+	background: #efefef;
+}
+
+.main-right li:nth-of-type(1)::before {
+	background: #fb910c;
+	color: #fff;
+}
+
+.main-right li:nth-of-type(2)::before {
+	background: #4bbdff;
+	color: #fff;
+}
+
+.main-right li:nth-of-type(3)::before {
+	background: #e48563;
+	color: #fff;
+}
+
+.main-right li:nth-of-type(1) span {
+	color: #fb910c;
+	font-size: 14px;
+}
+
+.main-right li:nth-of-type(2) span {
+	color: #4bbdff;
+	font-size: 14px;
+}
+
+.main-right li:nth-of-type(3) span {
+	color: #e48563;
+	font-size: 14px;
+}
+
+.main-right li:nth-of-type(1) em,
+.main-right li:nth-of-type(2) em,
+.main-right li:nth-of-type(3) em {
+	color: #333;
+	font-size: 14px;
+}
+
+.main-right li:nth-of-type(1)::after,
+.main-right li:nth-of-type(2)::after,
+.main-right li:nth-of-type(3)::after {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 18px;
+	height: 18px;
+	content: "";
+	border: solid 1px #fff;
+	border-radius: 50%;
+	line-height: 18px;
+}
+
+.main-right li span {
+	display: inline-block;
+	width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #666;
+	font-size: 12px;
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+
+.main-right li em {
+	color: #333;
+	font-style: normal;
+	font-size: 12px;
+}
+
+/* 没数据显示 */
+.empty {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.empty-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-info p {
+	color: #989898;
+}
+
+.icon-empty {
+	display: block;
+	width: 110px;
+	height: 100px;
+	background-image: url(../img/sprite.png);
+	background-position: -510px 0;
+}
+
+.empty-reason {
+    flex-basis: 68px;
+    margin-left: 10px;
+}
+
+.empty-reason dl dt,
+.empty-reason dl dd {
+	color: #989898;
+	font-size: 12px;
+	font-style: normal;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-2 CSS3中的变形--扭曲 skew() - 任务</title>
+	<style>
+		.wrapper {
+			width: 300px;
+			height: 100px;
+			border: 2px dotted red;
+			margin: 100px auto;
+		}
+
+		.wrapper div {
+			width: 300px;
+			height: 100px;
+			background: orange;
+			line-height: 100px;
+			text-align: center;
+			color: #fff;
+			transform: skew(45deg);
+		}
+
+		.wrapper span {
+			display: block;
+			transform: skew(-45deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>
+	    	<span>我不想被扭曲(^_^)</span>
+	    </div>
+	</div>
+</body>
+</html>

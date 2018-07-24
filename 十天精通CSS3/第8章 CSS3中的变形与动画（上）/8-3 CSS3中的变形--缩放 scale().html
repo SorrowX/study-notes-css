@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-3 CSS3中的变形--缩放 scale()</title>
+	<style>
+		.wrapper {
+			width: 200px;
+			height: 200px;
+			border: 2px dotted red;
+			margin: 100px auto;
+		}
+
+		.wrapper div {
+			width: 200px;
+			height: 200px;
+			background: orange;
+			text-align: center;
+			color: #fff;
+			line-height: 200px;
+			transition: all .6s;
+		}
+
+		.wrapper div:hover {
+			transform: scale(1.5)
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>我将放大1.5倍</div>
+	</div>
+</body>
+</html>

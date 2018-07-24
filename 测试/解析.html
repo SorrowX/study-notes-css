@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>解析</title>
+</head>
+<body>
+	<script>
+
+		/*{
+			name: '姓名',
+			password: '密码'
+		}*/
+
+		let data = [ 
+		    [ '资源标识', '中文', '英文' ],
+            [ 'name', '姓名', 'Name' ],
+            [ 'password', '密码', 'Password' ]
+        ]
+
+        function parse(data) {
+
+        	let arr = createSomeObject(data)
+        	setVal(arr, data)
+        	let result = serialize(arr)
+        	return result
+
+        	function createSomeObject(data) {
+        		let objArr = []
+        		let arr = data.shift()
+        		arr.forEach((item, index) => {
+        			if (index !== 0) {
+						objArr.push(createObject(data, arr[index]))
+        			}
+        		})
+        		return objArr
+        	}
+
+        	function createObject(data, fileName) {
+        		let obj = {}
+        		data.forEach((arr, index) => {
+        			obj[arr[0]] = null
+        		})
+        		obj['fileName'] = fileName
+        		return obj
+        	}
+
+        	function setVal(objArr, data) {
+        		let prop
+        		data.forEach((arr, index) => {
+        			arr.forEach((item, idx) => {
+        				if (idx === 0) {
+        					prop = item
+        				} else {
+							objArr[idx - 1][prop] = item
+        				}
+					})
+        		})
+        		return objArr
+        	}
+
+        	function serialize(arr) {
+                let result = []
+                arr.forEach((obj, index) => {
+					let emptyObject = {}
+					emptyObject[obj['fileName']] = obj
+					delete obj['fileName']
+					result.push(emptyObject)
+                })
+                return result
+        	}
+        }
+
+        parse(data)
+		
+	</script>
+</body>
+</html>
