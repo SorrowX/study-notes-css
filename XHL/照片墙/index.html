@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>照片墙</title>
+	<link rel="stylesheet" href="./css/photo.css">
+</head>
+<body>
+	<div class="app">
+		<div class="loading">
+			<div class="loading-tip">
+			</div>
+		</div>
+		<div class="wrapper">
+			<h1 class="title">
+				<span>照</span>
+				<span>片</span>
+				<span>墙</span>
+			</h1>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/data.js"></script>
+	<script type="text/javascript" src="./js/drag.js"></script>
+	<script type="text/javascript" src="./js/photo.js"></script>
+	<script type="text/javascript" src="./js/img-load.js"></script>
+	<script type="text/javascript">
+	    window.onload = function() {
+	    	var fail = false
+	    	preloadImg(getArrImgPath(), function(error, state) {
+	    		if (fail) return
+	    		if (!error) {
+	    			if (state === 'success') {
+	    				setWrapperStyle()
+	    				insertPhotoDom()
+				    	caclPhotoPositionAndRotate()
+				    	bindEvent()
+	    				hiddenLoading()
+	    				if (ONE_BY_ONE) {
+	    					grantPhoto()
+	    				}
+	    			} else {
+                        setLoadingTipText(state)
+	    			}
+	    		} else {
+	    			fail = true
+	    			setLoadingTipText('加载失败！')
+	    		}
+	    	})
+	    }
+	</script>
+</body>
+</html>
