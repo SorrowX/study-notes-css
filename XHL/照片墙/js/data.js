@@ -1,4 +1,3 @@
-
 var allImgPath = [
     "./images/20161216_IMG_0004.JPG",
     "./images/20161216_IMG_0005.JPG",
