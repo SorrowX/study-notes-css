@@ -5,9 +5,10 @@ var imgMaxNum = 50 // 照片墙显示的最大图片数量
 var transitionTime = 1 // transition动画的过渡时间单位/秒
 
 var mouseDownTransitionStyle = `box-shadow ${transitionTime}s ease, transform ${transitionTime}s ease, opacity ${transitionTime}s ease`
-var defaultTransitionStyle = function(timingFunction) {
+var defaultTransitionStyle = function(timingFunction, time) {
 	timingFunction = timingFunction || 'ease'
-	return `box-shadow ${transitionTime}s ${timingFunction}, transform ${transitionTime}s ${timingFunction}, opacity ${transitionTime}s ${timingFunction}, left ${transitionTime}s ${timingFunction}, top ${transitionTime}s ${timingFunction}`
+	time = time || transitionTime
+	return `box-shadow ${time}s ${timingFunction}, transform ${time}s ${timingFunction}, opacity ${time}s ${timingFunction}, left ${time}s ${timingFunction}, top ${time}s ${timingFunction}`
 }
 
 function getArrImgPath() {
@@ -106,7 +107,7 @@ let grantPhoto = async function() {
 	await sleep(1200)
 	for (let i = 0; i < aPhotoDom.length; i++) {
 		await setPhotoStylePropAndListener(aPhotoDom[i])
-		await sleep(300)
+		await sleep(500)
 	}
 	return 'move ok'
 }
@@ -144,7 +145,7 @@ function getTimingFunction() {
 	'cubic-bezier(.24,1.13,.94,1.16)', 'cubic-bezier(0,.72,.43,-0.53)', 
 	'cubic-bezier(0,1.41,1,-0.63)', 'cubic-bezier(1,-0.13,.15,1.83)', 
 	'cubic-bezier(.73,-1.29,0,1.82)', 'cubic-bezier(.91,-1.15,0,1.53)']
-	return defaultTransitionStyle(getRandomItem(f))
+	return defaultTransitionStyle(getRandomItem(f), 1.2)
 }
 
 function _getScreenCtenterPosition(dom) {
