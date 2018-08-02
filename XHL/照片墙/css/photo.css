@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	user-select: none;
+	background-image: linear-gradient(to top left, #63B8FF, #FFE4C4, #48D1CC, #FFEFDB, #00EEEE, #FFFACD, #00B2EE);
+}
+
+@font-face {
+	font-family: '华康少女文字简W5';
+	src: url('../font/华康少女文字简W5.ttc');
+}
+
+.wrapper {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 0 2px 32px #aaaaaa, 0 0 32px #aaaaaa;
+}
+
+/* 标题样式 */
+.title {
+	position: relative;
+	z-index: 10;
+	padding: 20px 0 0 0;
+	text-align: center;
+	color: #7A67EE;
+	letter-spacing: 16px;
+	font-size: 45px;
+	font-family: '华康少女文字简W5';
+	text-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.title span:nth-of-type(1) {
+   color: #1E90FF;
+}
+
+.title span:nth-of-type(2) {
+   color: #FF83FA;
+}
+
+/* 图片容器样式 */
+.photo {
+	position: absolute;
+	z-index: 1;
+	width: 280px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.photo img {
+	width: 100%;
+	height: 100%;
+}
+
+.photo:hover {
+	transform: rotate(0deg) !important;
+	transform: scale(1.3) !important;
+	box-shadow: 5px 5px 10px #FFDAB9;
+	z-index: 2;
+	cursor: move;
+}
+
+/* loading 样式 */
+.loading {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+	background-image: linear-gradient(to top right, #63B8FF, #FFE4C4, #48D1CC, #FFEFDB, #00EEEE, #FFFACD, #00B2EE);
+}
+
+.loading-tip {
+	width: 120px;
+	height: 120px;
+	border: 2px solid #9F79EE;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
