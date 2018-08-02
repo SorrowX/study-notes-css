@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>line-height</title>
+	<style>
+	    * {
+	    	margin: 0;
+	    	padding: 0;
+	    }
+
+		div:nth-of-type(1) {
+			line-height: 1.2; /* 这个无单位数字<数字>乘以该元素的字体大小 */
+			font-size: 10pt;
+		}
+
+		div:nth-of-type(2) {
+			line-height: 1.2em;
+			font-size: 10pt;
+		}
+
+		div:nth-of-type(3) {
+			line-height: 120%;
+			font-size: 10pt; /* 计算值是给定的百分比值乘以元素计算出的字体大小 */
+		}
+
+		div:nth-of-type(4) {
+			font: 10pt/1.2 Georgia,"Bitstream Charter",serif;;
+		}
+	</style>
+</head>
+<body>
+	<div>number</div>
+	<div>length</div>
+	<div>percentage</div>
+	<div>font shorthand</div>
+</body>
+</html>

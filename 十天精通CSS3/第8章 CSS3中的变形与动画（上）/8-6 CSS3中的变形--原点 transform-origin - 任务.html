@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-6 CSS3中的变形--原点 transform-origin - 任务</title>
+	<style>
+		.wrapper {
+			width: 400px;
+			height: 100px;
+			border: 2px dotted red;
+			margin: 20px auto; 
+			text-align: center;
+			line-height: 100px;
+		}
+
+		.wrapper div {
+			background: orange;
+			color: #fff;
+			transform: skew(15deg);
+			transform-origin: top right; /* 右上角 */
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>我修改原点之后在进行15度的扭曲</div>
+	</div>
+</body>
+</html>
