@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello CSS3</title>
+	<style>
+		body{
+		    background:#000;
+		}
+
+		@font-face {
+		    font-family: '华康少女文字简W5';
+		    font-style: normal;
+		    font-weight: 400;
+		    src: url('./华康少女文字简W5.ttc');
+		}
+		  
+		h1 {
+		    text-align:center;
+		    color:#fff;
+			font-size:48px;
+		    font-family: '华康少女文字简W5', cursive;
+		    text-shadow: 1px 1px 1px #ccc,
+		                0 0 10px #fff,
+		                0 0 20px #fff,
+		                0 0 30px #fff,
+		                0 0 40px #ff00de,
+		                0 0 70px #ff00de,
+		                0 0 80px #ff00de,
+		                0 0 100px #ff00de,
+		                0 0 150px #ff00de;
+						   
+			transform-style: preserve-3d;
+		    animation: run ease-in-out 9s infinite;
+		}
+
+		@keyframes run {
+		    0% {
+		        transform: rotateX(-5deg) rotateY(0);	
+		    }
+		    50% {
+		        transform: rotateX(0) rotateY(180deg);	
+				text-shadow: 1px  1px 1px #ccc,
+		                    0 0 10px #fff,
+		                    0 0 20px #fff,
+		                    0 0 30px #fff,
+		                    0 0 40px #3EFF3E,
+		                    0 0 70px #3EFFff,
+		                    0 0 80px #3EFFff,
+		                    0 0 100px #3EFFee,
+		                    0 0 150px #3EFFee;
+		    }
+		    100% {
+		        transform: rotateX(5deg) rotateY(360deg);	
+		    }
+		}
+	</style>
+</head>
+<body>
+	<h1>Hello CSS3</h1>
+</body>
+</html>

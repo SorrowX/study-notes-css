@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>align-items</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+	    .flex-container {
+	    	display: flex;
+	    	flex-direction: row;
+	    	align-items: stretch;
+	    	/* align-items属性定义项目在交叉轴上如何对齐。 */
+	    	/* flex-start：交叉轴的起点对齐。 */
+	    	/* flex-end：交叉轴的终点对齐。 */
+	    	/* center：交叉轴的中点对齐。 */
+	    	/* baseline: 项目的第一行文字的基线对齐 */
+	    	/* stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。 */
+	    }
+
+		.flex-item:nth-child(1) {
+		    background: yellow;
+		    height: 100px;
+		}
+
+		.flex-item:nth-child(2) {
+		    background: green;
+		    height: 80px;
+		    font-size: 20px;
+		}
+
+		.flex-item:nth-child(3) {
+		    background: pink;
+		    height: 150px;
+		}
+
+		.flex-item:nth-child(4) {
+		    background: red;
+		    height: 70px;
+		    font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item">A</div>
+	    <div class="flex-item">B</div>
+	    <div class="flex-item">C</div>
+	    <div class="flex-item">D</div>
+	</div>
+</body>
+</html>

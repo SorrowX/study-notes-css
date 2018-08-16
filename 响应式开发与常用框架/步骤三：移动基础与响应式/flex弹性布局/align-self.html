@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>align-self</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		.flex-container {
+		    display: flex;
+		    height: 250px;
+		    align-items: center;
+		}
+
+		/* align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。 */
+		/* .item {
+		    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+		} */
+
+		.flex-item:nth-child(1) {
+		    align-self: stretch;
+		}
+
+		.flex-item:nth-child(2) {
+		    align-self: flex-start;
+		}
+
+		.flex-item:nth-child(3) {
+		    align-self: flex-end;
+		}
+
+		.flex-item:nth-child(4) {
+		    font-size: 24px;
+		    align-self: baseline;
+		}
+
+		.flex-item:nth-child(5) {
+		    font-size: 30px;
+		    align-self: baseline;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item red">A小乔</div>
+	    <div class="flex-item blue">B虞姬</div>
+	    <div class="flex-item green">C白起</div>
+	    <div class="flex-item orange">D东皇太一</div>
+	    <div class="flex-item orange">E诸葛亮</div>
+	</div>
+</body>
+</html>
