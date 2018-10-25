@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text-align</title>
+	<style>
+		/* text-align 具有继承性 */
+	    /* body {
+	    	text-align: right;
+	    } */ 
+
+		.text1 {
+			text-align: left;
+		}
+		.text2 {
+			text-align: center;
+		}
+		.text3 {
+			text-align: right;
+		}
+		.text4 {
+			text-align: justify;
+		}
+
+		div {
+			text-align: center;
+		}
+
+		.text-align p {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		/* text-align对块级元素设置才有效 */
+		span {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<P>文本默认：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	</P>
+
+	<P class="text1">文本左对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	</P>
+
+	<P class="text2">文本居中对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	</P> 
+	   
+	<P class="text3">文本右对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	</P>
+
+	<P class="text4">文本两端对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	    HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	</P>
+
+	<div class="text-align">
+	    <P>
+	    	指定宽度HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	        HTML 不是一种编程语言，而是一种标记语言 (markup language),
+	        标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+	        HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+	    </P>
+	</div>
+
+	<div>
+		<img src="img/text-align.png"/>
+	</div>
+
+	<span>内联元素设置text-align无效</span>
+</body>
+</html>
