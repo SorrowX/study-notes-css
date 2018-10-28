@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-6 CSS3中的变形--原点 transform-origin</title>
+	<style>
+		.wrapper {
+			width: 300px;
+			height: 300px;
+			border: 2px dotted red;
+			margin: 100px;
+			float: left;
+			line-height: 300px;
+			text-align: center;
+		}
+
+		.wrapper div {
+			background: orange;
+			transform: rotate(45deg);
+		}
+
+		.transform-origin div {
+			transform-origin: left top; /* left top === 0, 0 */
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>原点在默认位置处</div>
+	</div>
+	<div class="wrapper transform-origin">
+	    <div>原点重置到左上角</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-grow</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		.flex-container {
+			display: flex;
+			width: 330px;
+		}
+
+		/* flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。*/
+		/* 如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。 */
+
+		.flex-item {
+			flex-grow: 1;
+		}
+
+		.flex-item:nth-child(1) {
+			width: 80px;
+			padding: 0 5px;
+			flex-grow: 0;
+        }
+
+        .flex-item:nth-child(2) {
+        	width: 80px;
+        	padding: 0 5px;
+        }
+
+        .flex-item:nth-child(3) {
+        	width: 80px;
+        	padding: 0 5px;
+        }
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item red">A小乔</div>
+	    <div class="flex-item blue">B虞姬</div>
+	    <div class="flex-item green">C白起你好吗</div>
+	</div>
+</body>
+</html>

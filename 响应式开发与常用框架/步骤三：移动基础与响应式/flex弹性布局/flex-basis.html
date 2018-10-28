@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-basis</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		.flex-container {
+		    display: flex;
+		    width: 440px;
+		}
+
+		/* flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。 */
+		/* .item {
+			  flex-basis: <length> | auto; default auto
+		} */
+		/* 它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。 */
+
+		.flex-item {
+		    flex-grow: 1;
+		    flex-basis: 0;
+		}
+
+		.flex-item:nth-child(1) {
+			/*flex-basis: 100px;*/
+		}
+
+		.flex-item:nth-child(2) {
+			/*flex-basis: 150px;*/
+		}
+
+		.flex-item:nth-child(3) {
+			/*flex-basis: 200px;*/
+		}
+
+		.flex-item:nth-child(4) {
+			/*flex-basis: 250px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item red">A小乔</div>
+	    <div class="flex-item blue">B虞姬</div>
+	    <div class="flex-item green">C白起</div>
+	    <div class="flex-item orange">D东皇太一一条小蛟龙</div>
+	</div>
+</body>
+</html>

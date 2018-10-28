@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div</title>
+	<style>
+		.wrapper {
+			height: 250px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #FFF5EE;
+		}
+
+		.wrapper div {
+			height: 200px;
+		}
+
+		.wrapper div:nth-child(1) {
+			width: 200px;
+			background-color: red;
+		}
+
+		.wrapper div:nth-child(2) {
+			flex: 1;
+			background-color: #ccc;
+		}
+
+		.wrapper div:nth-child(3) {
+			width: 200px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left"></div>
+		<div class="center"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

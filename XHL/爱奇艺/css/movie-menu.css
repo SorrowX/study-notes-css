@@ -1,0 +1,44 @@
+.movie-menu{
+	padding: 0 var(--movie-padding-left-right);
+	background-color: var(--movie-header-bg-color);
+}
+
+.main-menu{
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.main-menu ul{
+	display: flex;
+	align-items: center;
+	font-size: 17.5px;
+	color: var(--movie-header-font-color);
+}
+
+.main-menu ul li{
+	list-style-type: none;
+	margin-right: 40px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.main-menu ul li:hover{
+	color: var(--movie-font-color);
+}
+
+.main-menu ul li.active{
+	color: var(--movie-font-color);
+	border-bottom: 3px solid var(--movie-font-color);
+}
+
+.song-menu{
+	width: 100%;
+	height: 48px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.current-menu{
+}

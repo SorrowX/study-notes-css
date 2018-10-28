@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>app</title>
+	<link rel="stylesheet" href="./css/common-variable.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/movie-menu.css">
+	<link rel="stylesheet" href="./css/movie-wrapper.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+	<div class="app">
+        <nav class="nav">
+        	<div class="nav-up">
+        		<span>
+        			<i class="fa fa-bars nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-home nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-heart nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-feed nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-star-o nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-history nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-download nav-font-size"></i>
+        		</span>
+        	</div>
+        	<div class="nav-down">
+        		<span>
+        			<i class="fa fa-film nav-font-size active"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-user-o nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-smile-o nav-font-size"></i>
+        		</span>
+        		<span>
+        			<i class="fa fa-cog nav-font-size"></i>
+        		</span>
+        	</div>
+        </nav>
+        <div class="content">
+        	<div class="movie">
+        		<header class="header">
+        			<div class="header-left">
+        				<i class="fa fa-youtube-play logo-font-size"></i>
+        				<span>
+        					视频播放器
+        				</span>
+        			</div>
+        			<div class="header-right">
+        				<input type="text" placeholder="搜索">
+        				<button>
+        					<i class="fa fa-search fa-rotate-90"></i>
+        					搜全网
+        				</button>
+        			</div>
+        		</header>
+
+		    	<div class="movie-menu">
+		    		<div class="main-menu">
+		    			<ul>
+		    				<li>VIP精选</li>
+		    				<li>会员俱乐部</li>
+		    				<li class="active">电影</li>
+		    				<li>电视剧</li>
+		    				<li>演唱会</li>
+		    				<li>纪录片</li>
+		    			</ul>
+		    		</div>
+		    	</div>
+
+		    	<div class="movie-wrapper" id="movie-wrapper">
+		    		<div class="movie-nav" id="movie-nav">
+		    			<ul>
+		    				<li class="active">热播榜</li>
+		    				<li>好评榜</li>
+		    				<li>新上线</li>
+		    			</ul>
+
+		    			<ul>
+		    				<li class="active">全部地区</li>
+		    				<li>华语</li>
+		    				<li>美国</li>
+		    				<li>欧洲</li>
+		    				<li>韩国</li>
+		    				<li>日本</li>
+		    				<li>泰国</li>
+		    				<li>其他</li>
+		    			</ul>
+
+		    			<ul>
+		    				<li class="active">全部类型</li>
+		    				<li>喜剧</li>
+		    				<li>悲剧</li>
+		    				<li>爱情</li>
+		    				<li>动作</li>
+		    				<li>枪战</li>
+		    				<li>犯罪</li>
+		    				<li>惊悚</li>
+		    				<li>恐怖</li>
+		    				<li>悬疑</li>
+		    				<li>动画</li>
+		    				<li>剧情片</li>
+		    				<li>家庭</li>
+		    				<li>奇幻</li>
+		    				<li>魔幻</li>
+		    				<li>伦理片</li>
+		    				<li>科幻</li>
+		    				<li>战争</li>
+		    				<li>青春</li>
+		    				<li>传奇片</li>
+		    				<li>歌舞</li>
+		    				<li>其他</li>
+		    				<li>网络大电影</li>
+		    				<li>喜剧</li>
+		    				<li>悲剧</li>
+		    				<li>爱情</li>
+		    				<li>动作</li>
+		    				<li>枪战</li>
+		    				<li>犯罪</li>
+		    				<li>惊悚</li>
+		    				<li>恐怖</li>
+		    				<li>悬疑</li>
+		    				<li>动画</li>
+		    				<li>剧情片</li>
+		    				<li>家庭</li>
+		    				<li>奇幻</li>
+		    				<li>魔幻</li>
+		    				<li>伦理片</li>
+		    				<li>科幻</li>
+		    				<li>战争</li>
+		    				<li>青春</li>
+		    				<li>传奇片</li>
+		    				<li>歌舞</li>
+		    				<li>其他</li>
+		    				<li>网络大电影</li>
+		    			</ul>
+
+		    			<ul>
+		    				<li class="active">全部规格</li>
+		    				<li>巨制</li>
+		    				<li>院系</li>
+		    				<li>独播</li>
+		    				<li>网络大电影</li>
+		    				<li>经典</li>
+		    				<li>口碑佳片</li>
+		    				<li>杜比</li>
+		    				<li>电视节目</li>
+		    				<li>4K</li>
+		    				<li>原声</li>
+		    				<li>粤语</li>
+		    			</ul>
+
+		    			<ul>
+		    				<li class="active">全部年份</li>
+		    				<li>2017</li>
+		    				<li>2016</li>
+		    				<li>2015</li>
+		    				<li>2014-1015</li>
+		    				<li>2010-2000</li>
+		    				<li>90年代</li>
+		    				<li>90年代</li>
+		    				<li>更早</li>
+		    			</ul>
+		    		</div>
+		    		<div class="movie-cur-nav" id="movie-cur-nav">
+		    			热播榜
+		    		</div>
+    		    	<div class="movie-list" id="list">
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒风雨咒风雨咒风雨咒风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+
+    					<div class="movie-list-item">
+    						<img src="https://pic3.iqiyipic.com/image/20180917/cf/c1/v_115720703_m_601_m12_260_360.jpg" alt="">
+    						<span class="score">9.7</span>
+    						<p>风雨咒</p>
+    					</div>
+    		    	</div>
+		    	</div>
+		    	
+        	</div>
+        </div>
+	</div>
+	<script src="./js/movie-nav.js"></script>
+</body>
+</html>

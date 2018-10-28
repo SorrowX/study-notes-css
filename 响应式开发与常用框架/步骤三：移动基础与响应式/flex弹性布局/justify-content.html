@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>justify-content</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+	    .flex-container {
+	    	display: flex;
+	    	flex-direction: row;
+	    	justify-content: space-around;
+	    	/* 假设主轴为从左到右 */
+	    	/* flex-start（默认值）：左对齐 */
+	    	/* flex-end：右对齐 */
+	    	/* center： 居中 */
+	    	/* space-between：两端对齐，项目之间的间隔都相等。 */
+	    	/* space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。 */
+	    }
+
+		.flex-item:nth-child(1){
+		    background: yellow;
+		}
+
+		.flex-item:nth-child(2){
+		    background: green;
+		}
+
+		.flex-item:nth-child(3){
+		    background: pink;
+		}
+
+		.flex-item:nth-child(4){
+		    background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item">A</div>
+	    <div class="flex-item">B</div>
+	    <div class="flex-item">C</div>
+	</div>
+</body>
+</html>

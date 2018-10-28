@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-wrap</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+	    .flex-container {
+	    	display: flex;
+	    	flex-wrap: wrap-reverse;
+	    	/* nowrap（默认）：不换行。 */
+	    	/* wrap：换行，第一行在上方, 从上到下依次换行。*/
+	    	/* wrap-reverse：换行，第一行在下方, 和wrap相反。 */
+	    }
+
+	    .flex-item {
+	    	width: 150px;
+	    }
+
+		.flex-item:nth-child(1){
+		    background: yellow;
+		}
+
+		.flex-item:nth-child(2){
+		    background: green;
+		}
+
+		.flex-item:nth-child(3){
+		    background: pink;
+		}
+
+		.flex-item:nth-child(4){
+		    background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	    <div class="flex-item">A</div>
+	    <div class="flex-item">B</div>
+	    <div class="flex-item">C</div>
+	    <div class="flex-item">D</div>
+	</div>
+</body>
+</html>

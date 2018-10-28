@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css 变量</title>
+	<style>
+		:root {
+			--main-color: #8c9ae0;
+			--main-bg: rgb(255, 255, 255);
+			--width: 300px;
+			--height: 300px;
+		}
+
+		.box {
+			width: var(--width);
+			height: var(--height);
+			background-color: var(--main-color, red)
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+
+	<script>
+		// 操作:root中的变量
+
+		// 1. 读取:root中的变量
+		let val = getComputedStyle(document.documentElement).getPropertyValue('--width')
+		console.log('读取:root中定义的--width属性，值为: ', val)
+
+		// 2. 重写:root中变量的值
+		document.documentElement.style.setProperty('--width', '350px')
+	</script>
+</body>
+</html>

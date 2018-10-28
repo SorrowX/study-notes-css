@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-10 CSS3中的动画--过渡延迟时间 transition-delay - 任务</title>
+	<style>
+		.wrapper {
+			width: 400px;
+			height: 200px;
+			margin: 20px auto;
+			border: 2px dotted red;
+			position:relative;
+		}
+
+		.wrapper div {
+			padding: 15px 20px;
+			color: #fff;
+			background-color: orange;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: all .5s ease-in .2s;
+		}
+
+		.wrapper div:hover {
+			background-color: red;
+			border-radius: 10px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>鼠标放到我的身上来</div>
+	</div>
+</body>
+</html>

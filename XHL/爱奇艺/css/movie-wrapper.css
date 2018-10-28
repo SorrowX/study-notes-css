@@ -1,0 +1,104 @@
+.movie-wrapper{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.movie-nav{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--movie-header-bg-color);
+}
+
+.movie-nav ul{
+    display: flex;
+    margin: 22px 18px 8px 18px;
+    overflow: auto;
+}
+
+.movie-nav ul li{
+	flex-shrink: 0;
+	padding-bottom: 7px;
+	margin-right: 25px;
+	color: var(--movie-nav-font-color);
+	cursor: pointer;
+}
+
+.movie-nav ul li.active,
+.movie-nav ul li:hover{
+	color: var(--movie-font-color-opacity);
+}
+
+.movie-nav ul::-webkit-scrollbar {
+	height: 1px;
+	display: none;
+}
+
+/* 当前nav样式 */
+.movie-cur-nav{
+	height: 48px;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: none;
+	padding: 0 20px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 48px;
+	color: var(--movie-font-color);
+}
+
+
+/* 电影列表样式 */
+.movie-list{
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 var(--movie-padding-left-right);
+	margin-top: 20px;
+}
+
+.movie-list-item {
+	position: relative;
+	margin: 0 14px 20px 1px;
+}
+
+.movie-list-item .score{
+	position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(0,0,0,.5);
+    bottom: 25px;
+    right: 0px;
+    padding: 4px 8px;
+    color: #fff;
+}
+
+.movie-list-item img{
+	width: var(--movie-img-width);
+	height: var(--movie-img-height);
+}
+
+.movie-list-item p{
+	width: var(--movie-img-width);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--movie-list-p-color);
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--movie-header-bg-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #484B4D;
+    border-radius: 10px;
+}

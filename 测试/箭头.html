@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            float: left;
+            margin-right: 5%;
+        }
+        a {
+            display: block;
+        }
+ 
+        /*关闭按钮*/
+        .close {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+ 
+        .close:before, .close:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 1px;
+            background-color: #888;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+ 
+        .close:after {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+ 
+        /*箭头部分*/
+        .down-arrow {
+            width: 40px;
+            height: 40px;
+        }
+ 
+        .down-arrow:after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 25px;
+            border-right: 1px solid #888;
+            border-top: 1px solid #888;
+            -webkit-transform: rotate(135deg); /*箭头方向可以自由切换角度*/
+            transform: rotate(135deg);
+        }
+    </style>
+</head>
+<body>
+<div><a href="javascript:void(0)" class="close"></a></div>
+<div><a href="javascript:void(0)" class="down-arrow"></a></div>
+</body>
+</html>

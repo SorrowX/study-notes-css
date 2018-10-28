@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2-4 CSS3边框  为边框应用图片 border-image</title>
+	<style>
+	    /* border-image: source slice width outset 重复（repeat）|拉伸（stretch）|铺满（round） */
+
+		.border-image {
+			width: 210px;
+			height: 210px;
+			background: #F4FFFA;
+			border: 70px solid #ddd;
+			border-image: url(http://img.mukewang.com/52e21fea000127e802100210.jpg) 70 round;
+		}
+
+        .border-image2 {
+        	width: 450px;
+        	height: 100px;
+        	line-height: 100px;
+        	text-align: center;
+        	margin: 100px auto;
+        	font-size: 30px;
+        	border: 15px solid #ccc;
+        	border-image: url(http://img.mukewang.com/52e22a1c0001406e03040221.jpg) 15 repeat;
+        }
+	</style>
+</head>
+<body>
+	<div class="border-image"></div>
+	<div class="border-image2">
+		来镶嵌上漂亮的画框
+	</div>
+</body>
+</html>
